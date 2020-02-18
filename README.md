@@ -2,7 +2,7 @@
 
 One percent of world’s power is consumed by data centers, just to cool themselves. With an expertise ranging from managing thermal environments of worlds most complex aero-engines to using machine learning to make systems that learn from and operate on the real world, we aim to manage thermal environments using a system that dynamically controls cooling hardware, learns from its behaviors over time and reduce cooling energy consumption by 40%
 
-### Rapid DC Growth in India
+### Today's data center cooling costs
 
  With the average Power Usage Effectiveness (PUE) of Data Centers (DCs) across India at [1.7](https://www.osti.gov/servlets/purl/1249186), hardware mods offer a costly alternative to make cooling in data centers more efficient. On the contrary, with a compound annual growth rate (CAGR) predicted at [20%](https://www.datacenterdynamics.com/en/analysis/indias-data-centers-are-set-growth/) it is imperative for DCs to look for opportunities to improve their PUE numbers to make the most out of available equipment and have a competitive edge.
 
