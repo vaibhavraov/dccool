@@ -43,10 +43,10 @@ We are proposing to replace manual policies with learnt policies. Two ways to do
 
 An example simulation with and without smart control systems show energy expenditure below:
 
-Energy expenditure without smart controls:
+Energy expenditure without smart controls
 **![Energy expenditure without smart controls](https://lh5.googleusercontent.com/1r2-6kAN-sgxU4B85OUIFus2w9kTPvuDPyUrX4ZXn2ldPcXuLfaXqwdX2GApdG18VVJmBDOVlqaXEzH-6Lf_nFWk-2Za9heNhpCOunFfO8cnIE_kSntabwmNMggxYxjKha9r_-zEdaU)**
 
-Energy expenditure with smart controls:
+Energy expenditure with smart controls
  **![Energy expenditure with smart controls](https://lh4.googleusercontent.com/8N7zfjcbFshgT41FbniJce6mot2-oOhjU7TVNvTIiOKqd4oB38497N40TsD79kvv9qfGxA-HB-grpPs9dRJ6ZSUJ4ScEupmPBgiCEMUiRNO50R5mOmLHAnadmxYaye1nJQngbAhgz7U)**
 ### What are we doing now?
 - Creating a miniature data center, to test the strategies in real (miniature) life
@@ -82,6 +82,8 @@ We are looking for
 - Data center industry is very hard for newcomers to crack. Any contacts that can help us !!
 - No one listens to two newbies, specially data centers who are mission critical!! We want to build a crack PoC to show this can work! We are looking for your guidance on buidling that perfect PoC
 - We need a test data center and compute resources. We are raising external funds for same.
-## Help us raise funds :)
-### Give us a Letter of Intent
+### Help us raise funds :)
 If you are trying to reduce data center costs, and would buy our system, a Letter of Intent (LoI) saying so would be very helpful to raise funds. Let us know all the information you need so you can help us with an LoI.
+
+## Product and Tech Roadmap
+**![Product and Technology Roadmap](https://lh5.googleusercontent.com/yaRqGEJNqjP4MWpnE5ZMtS-7sh78cnB3I7gQ5uSY85wjkysUHrhS7ZUgXFq4YrMAHAWlV79w_xMzH6e8JyrgPP53qIp2vRMic0YiPb1HzYdm7RcUi5Iheq9DypjYGeXxq8He5WbvT0w)**
