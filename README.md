@@ -82,7 +82,7 @@ We are looking for
 - Data center industry is very hard for newcomers to crack. Any contacts that can help us !!
 - No one listens to two newbies, specially data centers who are mission critical!! We want to build a crack PoC to show this can work! We are looking for your guidance on buidling that perfect PoC
 - We need a test data center and compute resources. We are raising external funds for same.
-- ### Help us raise funds with your a Letter of Intent :)
+- ## Help us raise funds with your a Letter of Intent :)
 If you are trying to reduce data center costs, and would buy our system, a Letter of Intent (LoI) saying so would be very helpful to raise funds. Let us know all the information you need so you can help us with an LoI.
 
 # Roadmaps
