@@ -1,13 +1,18 @@
 # Smart data center cooling
+-   30% of power consumed by data centers (DCs) is used for cooling   
+-   Cooling is the biggest hindrance in achieving a Power Usage Effectiveness (PUE) < 1.5 (average of 1.7 across India)
 
-One percent of world’s power is consumed by data centers, just to cool themselves. With an expertise ranging from managing thermal environments of worlds most complex aero-engines to using machine learning to make systems that learn from and operate on the real world, we aim to manage thermal environments using a system that dynamically controls cooling hardware, learns from its behaviors over time and reduce cooling energy consumption by 40%
+### Efficiency is the need of the hour
+Data centers want to reduce energy consumption. There is an observed trend for data centers to move towards
+- Buying green power
+- Reducing IT costs and efficiently distribute load
+- Using best practices and buying A1 class Heating, Ventilation and Air Conditioning (HVAC) systems
 
-### Today's data center cooling costs
+Our conversations with data center owners suggest that HVAC systems are managed by manual setpoints. All data centers have ways to control cooling, but aren't trying to optimize cooling.
 
- With the average Power Usage Effectiveness (PUE) of Data Centers (DCs) across India at [1.7](https://www.osti.gov/servlets/purl/1249186), hardware mods offer a costly alternative to make cooling in data centers more efficient. On the contrary, with a compound annual growth rate (CAGR) predicted at [20%](https://www.datacenterdynamics.com/en/analysis/indias-data-centers-are-set-growth/) it is imperative for DCs to look for opportunities to improve their PUE numbers to make the most out of available equipment and have a competitive edge.
 
-[Studies]([https://www.osti.gov/servlets/purl/1249186](https://www.osti.gov/servlets/purl/1249186)) across DCs in India suggest that, for a variety of options with potential to reduce energy consumption, 100% of DC owners prioritized cooling distribution optimization over others as an area with significant energy consumption savings opportunities.
-|Level of possibility for energy saving opportunity| Responses received from DC owners |
+[Studies]([https://www.osti.gov/servlets/purl/1249186](https://www.osti.gov/servlets/purl/1249186)) across data centers in India suggest that, for a variety of options with potential to reduce energy consumption, 100% of data centers owners prioritized cooling distribution optimization over others as an area with significant energy consumption savings opportunities.
+|Level of possibility for energy saving opportunity| Responses received from data center owners |
 |--|--|
 |Power distribution architecture|42.90%|
 |Power conversions|42.90%|
@@ -16,35 +21,66 @@ One percent of world’s power is consumed by data centers, just to cool themsel
 |Network architecture|28.60%|
 |Server utilization|100%|
 
-Though DCs today use best-in-class HVAC systems coupled with latest available DC management systems, recent advances in machine learning provide an opportunity to better integrate DC management systems with available cooling system controls using nothing more than just the available IT equipment temperature data.
+### But why aren't they doing it? Why is it difficult to optimize cooling?
+-   Optimizing the setpoints/policies for target PUE is difficult
+-   Various non-linear feedback loops and interactions happen in a data center, making simulations difficult and inaccurate
+	- e.g. if you up the chiller temperature by a degree, what impact will it have on the differential pressure (dp)? This delta dp will cause a change in server fan speeds. How will this affect PUE in the end?
+-   It takes dedicated effort from a team of people who know thermal management and optimization techniques
 
-### We reduce DC cooling energy costs by 40-50% using machine learning
+### What are we proposing?
+We are proposing to replace manual policies with learnt policies. Two ways to do that:
+- Use data to learn the actual behavior of a data center. Use it as a proxy for simulations:
+	- Deep networks can model long term dependencies, and non-linear behavior
+	- With large enough data set (3-6 months), they can predict PUE better than physics based simulations
+	- The simulation can be used to compare manually generated strategies OR
+	- Explore and exploit the learnt network through reinforcement learning to automatically come up with policies
+- Explore and exploit live in a data center, within constraints
+	- We can automatically explore control strategies live in a data center
+	- These explorations will be safe, well within defined constraints
+	- Learner will model the environment as it explores. Come up with strategies dynamically
+-   Compute strategies at the edge, no dependency on external network connections
+-   Both approaches improve the performance as more data comes in over time
 
-Our company are that opportunity. We aim to understand your current DC architecture and save cooling energy costs by 40-50% using machine learning. Building on [Google's](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bb67802995f7af4c6ba948ede1acfc8756be7134.pdf) already tried application of Reinforcement Learning (RL) to optimize its DC cooling, we are working to make it possible for our software to understand your DC structure (the equipment you chose to install, the location you chose to set your DC in, the time of the day you want your DC to run most efficient) and cool your DC as needed using as little energy as possible. Our solution is software only and doesn’t require any modifications to your DC hardware.
+An example simulation with and without smart control systems show energy expenditure below:
 
-### What do we do?
+Energy expenditure without smart controls
+**![Energy expenditure without smart controls](https://lh5.googleusercontent.com/1r2-6kAN-sgxU4B85OUIFus2w9kTPvuDPyUrX4ZXn2ldPcXuLfaXqwdX2GApdG18VVJmBDOVlqaXEzH-6Lf_nFWk-2Za9heNhpCOunFfO8cnIE_kSntabwmNMggxYxjKha9r_-zEdaU)**
 
-#### Our current-state assumptions
-1. Data centers use management [systems]([https://www.sunbirddcim.com/what-is-data-center-management](https://www.sunbirddcim.com/what-is-data-center-management))
-2. Data centers read temperatures of servers
-3. Data centers have control systems that are used to manage air flow and regulate temperature of servers
+Energy expenditure with smart controls
+ **![Energy expenditure with smart controls](https://lh4.googleusercontent.com/8N7zfjcbFshgT41FbniJce6mot2-oOhjU7TVNvTIiOKqd4oB38497N40TsD79kvv9qfGxA-HB-grpPs9dRJ6ZSUJ4ScEupmPBgiCEMUiRNO50R5mOmLHAnadmxYaye1nJQngbAhgz7U)**
+### What are we doing now?
+- Creating a miniature data center, to test the strategies in real (miniature) life
+- Requesting access to a test data center for experimentation to test our Proof of Concept (PoC) and MVP
+- Requesting access to past control and sensor data from real data centers
+- Working with a tech adviser from the data center world to help us
 
-The simulation below gives an overview of how current cooling systems work. Graphs show energy usage.
+### What do we solve for you?
+- Reduce your cooling bill by > 30%
+- We are raising external funding: You won’t spend a single penny on our experiments or for the PoC, MVP. We will only ask to be paid when we actually launch the product and it ends up saving money for you
+- All data centers are made differently, we wish to work with only 1 real data center in the beginning
+- We understand this is a very long process, but we are dedicated to solving this problem, and will put whatever grunt work has to be done to solve it
+### Ok, but isn’t it too risky ?
+## No gain, no pay
+We have the perfect zero risk strategy for launch for you! Launch happens in two stages,
+-   Stage 1
+	-   Person in loop policy
+	-   Infrequent policy updates, everything is verified and applied by the person
+- Stage 2
+	-   If decisions made by system are 5 sigma, system can take over
+	-   Person can revert any decision made by system
+	-   Detailed monitoring and failover
+	-   Fallback to old policies always available
+-   Continuous Monitoring and Modelling : All models, decisions will be verified by us
+- Clear attribution model
+-   Detailed logging
+-   Decision attribution will be a part of model and launch
 
-![Current state cooling](https://media2.giphy.com/media/Stx6jCkmdaxMs/giphy.gif?cid=790b761171a0e0e63bdcde7e95cf2cfd4a1e70200ed3606b&rid=giphy.gif)
-
-#### Our solution
-We aim to [apply]([https://arxiv.org/pdf/1908.06973.pdf](https://arxiv.org/pdf/1908.06973.pdf)) Reinforcement Learning (RL) to the control of real-world physical systems. Recent advances in RL emphasize one thing clearly, the ability to read-across the technology and solve problems with much technical complexity. RL provides us with an opportunity to better explore your DCs, understand your current deployed controls, your server usage statistic, learn from your DC behavior and derive better strategies using RL with its proven ability to provide cooling energy savings of the order of 40-50%.
-
-![enter image description here](http://www.vigilent.com/wp-content/uploads/2013/10/40-achievable-660x443.png)
-
-The simulation below gives an overview of how our proposed solution works. Graphs show energy usage.
-
-![Future state cooling](https://media2.giphy.com/media/ijqQ1X9gXwcmc/giphy.gif?cid=790b761171a0e0e63bdcde7e95cf2cfd4a1e70200ed3606b&rid=giphy.gif)
-
-A before-after comparison is shown in the picture below.
-
-![enter image description here](https://media0.giphy.com/media/ii4Xht1C8I7fy/giphy.gif?cid=790b7611f737873d75b73dea32e87ad86996c8ff15df8db1&rid=giphy.gif)
-### Heat Transfer meets Machine Learning
-
-We are a team of 2 passionate engineers focused on developing applications that help organisations reduce energy consumption. My co-founder, [Apurva Gupta](https://www.linkedin.com/in/apurva-gupta-74229a30/) is a Mathematics and Computing graduate from IIT Kanpur with expertise in machine learning. I, [Vaibhav Rao](https://www.linkedin.com/in/vaibhavraov/), am a Computational Heat Transfer and Fluid Mechanics post-graduate from BITS Pilani with experience in simulating and optimising thermal environments of Rolls-Royce aero-engines. Together, with our combined expertise, we are looking forward to providing solutions that reduce energy consumption.
+#### How can you help us?
+## Be our advisor !!
+We are looking for
+- Past sensor and control data from your data center
+- Data center industry is very hard for newcomers to crack. Any contacts that can help us !!
+- No one listens to two newbies, specially data centers who are mission critical!! We want to build a crack PoC to show this can work! We are looking for your guidance on buidling that perfect PoC
+- We need a test data center and compute resources. We are raising external funds for same.
+### Help us raise funds :)
+If you are trying to reduce data center costs, and would buy our system, a Letter of Intent (LoI) saying so would be very helpful to raise funds. Let us know all the information you need so you can help us with an LoI.
