@@ -49,15 +49,13 @@ Energy expenditure without smart controls
 Energy expenditure with smart controls
  **![Energy expenditure with smart controls](https://lh4.googleusercontent.com/8N7zfjcbFshgT41FbniJce6mot2-oOhjU7TVNvTIiOKqd4oB38497N40TsD79kvv9qfGxA-HB-grpPs9dRJ6ZSUJ4ScEupmPBgiCEMUiRNO50R5mOmLHAnadmxYaye1nJQngbAhgz7U)**
 ### What are we doing now?
-We are,
-- Creating a miniature data center, to test the strategies in real (miniature) life
+- We are creating a miniature data center, to test the strategies in real (miniature) life
 - Requesting access to a test data center for experimentation to test our Proof of Concept (PoC) and MVP
 - Requesting access to past control and sensor data from real data centers
 - Working with a tech adviser from the data center world to help us
 
 ### What do we solve for you?
-We,
-- Reduce your cooling bill by > 30%
+- We Reduce your cooling bill by > 30%
 - We are raising external funding: You won’t spend a single penny on our experiments or for the PoC, MVP. We will only ask to be paid when we actually launch the product and it ends up saving money for you
 - All data centers are made differently, we wish to work with only 1 real data center in the beginning
 - We understand this is a very long process, but we are dedicated to solving this problem, and will put whatever grunt work has to be done to solve it
