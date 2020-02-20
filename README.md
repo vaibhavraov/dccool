@@ -59,7 +59,7 @@ Energy expenditure with smart controls
 - We are raising external funding: You won’t spend a single penny on our experiments or for the PoC, MVP. We will only ask to be paid when we actually launch the product and it ends up saving money for you
 - All data centers are made differently, we wish to work with only 1 real data center in the beginning
 - We understand this is a very long process, but we are dedicated to solving this problem, and will put whatever grunt work has to be done to solve it
-### Ok, but isn’t it too risky ?
+### Ok, but isn’t it too risky?
 ## No gain, no pay
 We have the perfect zero risk strategy for launch for you! Launch happens in two stages,
 -   Stage 1
@@ -75,8 +75,8 @@ We have the perfect zero risk strategy for launch for you! Launch happens in two
 -   Detailed logging
 -   Decision attribution will be a part of model and launch
 
-#### How can you help us?
-## Be our advisor !!
+### How can you help us?
+## Be our advisor!!
 We are looking for
 - Past sensor and control data from your data center
 - Data center industry is very hard for newcomers to crack. Any contacts that can help us !!
