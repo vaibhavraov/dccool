@@ -43,10 +43,10 @@ We are proposing to replace manual policies with learnt policies. Two ways to do
 
 An example simulation with and without smart control systems show energy expenditure below:
 
-Energy expenditure without smart controls
+Energy expenditure without smart controls:
 **![Energy expenditure without smart controls](https://lh5.googleusercontent.com/1r2-6kAN-sgxU4B85OUIFus2w9kTPvuDPyUrX4ZXn2ldPcXuLfaXqwdX2GApdG18VVJmBDOVlqaXEzH-6Lf_nFWk-2Za9heNhpCOunFfO8cnIE_kSntabwmNMggxYxjKha9r_-zEdaU)**
 
-Energy expenditure with smart controls
+Energy expenditure with smart controls:
  **![Energy expenditure with smart controls](https://lh4.googleusercontent.com/8N7zfjcbFshgT41FbniJce6mot2-oOhjU7TVNvTIiOKqd4oB38497N40TsD79kvv9qfGxA-HB-grpPs9dRJ6ZSUJ4ScEupmPBgiCEMUiRNO50R5mOmLHAnadmxYaye1nJQngbAhgz7U)**
 ### What are we doing now?
 - Creating a miniature data center, to test the strategies in real (miniature) life
